@@ -69,3 +69,35 @@ else
     Console.WriteLine("Wrong input! Please try again.");
 }
 #endregion
+
+#region Switch statement
+
+string day = "Monday";
+
+switch (day.ToLower())
+{
+    case "monday":
+        Console.WriteLine("I dont have lecture today.");
+        break;
+    case "thuesday":
+        Console.WriteLine("I have lecture today.");
+            break;
+    case "wednesday":
+        Console.WriteLine("I dont have lecture today.");
+        break;
+    case "thursday":
+        Console.WriteLine("I have lecture today.");
+        break;
+    case "friday":
+        Console.WriteLine("I have lecture today.");
+        break;
+    case "saturday":
+    case "sunday":
+        Console.WriteLine("I dont have lecture today.");
+        break;
+    default:
+        Console.WriteLine("There is no sutch day sorry...");
+        break;      
+}
+
+#endregion
