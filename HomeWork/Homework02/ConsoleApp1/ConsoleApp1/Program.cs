@@ -1,15 +1,34 @@
-﻿double[] doubleArray = new double[] { 2.4, 11, 12, 634, 0.99 };
-// Reversing array
-Array.Reverse(doubleArray);
-Console.WriteLine(doubleArray);
-// Finding something in an array
-int indexFound = Array.IndexOf(doubleArray, 12);
-Console.WriteLine(indexFound);
-int indexNotFound = Array.IndexOf(doubleArray, 5.5);
-Console.WriteLine(indexNotFound);
+﻿
 
-// Change an array number of items
-Array.Resize(ref doubleArray, 6);
-doubleArray[5] = 105.6;
-Console.WriteLine(doubleArray[5]);
+
+#region Task 1
+
+Console.WriteLine("Enter 6 NUMBERS!");
+
+int[] numbers = new int[6];
+int sum = 0;
+
+for (int i = 0; i < 6; i++)
+{
+    Console.Write($"Enter number {i + 1}: ");
+    string input = Console.ReadLine();
+
+    if (!int.TryParse(input, out numbers[i]))
+    {
+        Console.WriteLine("Error: Please enter a valid number!");
+        return;
+    }
+
+    if (numbers[i] % 2 == 0)
+    {
+        Console.WriteLine($"{numbers[i]} is even.");
+        sum += numbers[i];
+    }
+}
+
+Console.WriteLine($"Numbers: {string.Join(" ", numbers)}");
+Console.WriteLine($"Sum of even numbers: {sum}");
 Console.ReadLine();
+
+#endregion
+
