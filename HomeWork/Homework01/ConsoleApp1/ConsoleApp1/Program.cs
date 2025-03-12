@@ -58,21 +58,21 @@
 
 #region Task 3
 
-// Prompt user for input
-Console.Write("Input the First Number: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
+//// Prompt user for input
+//Console.Write("Input the First Number: ");
+//int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input the Second Number: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Input the Second Number: ");
+//int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-// Swap the numbers
-int temp = firstNumber;
-firstNumber = secondNumber;
-secondNumber = temp;
+//// Swap the numbers
+//int temp = firstNumber;
+//firstNumber = secondNumber;
+//secondNumber = temp;
 
-// Display output after swapping
-Console.WriteLine("\nAfter Swapping:");
-Console.WriteLine("First Number: " + firstNumber);
-Console.WriteLine("Second Number: " + secondNumber);
+//// Display output after swapping
+//Console.WriteLine("\nAfter Swapping:");
+//Console.WriteLine("First Number: " + firstNumber);
+//Console.WriteLine("Second Number: " + secondNumber);
 
 #endregion
