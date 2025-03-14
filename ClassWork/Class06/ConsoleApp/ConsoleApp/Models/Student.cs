@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Models
 {
-    class Student
+    public class Student
     {
+        public Student (string fName, int age)
+        {
+            FullName = fName;
+            Age = age;
+        }
+        public string FullName { get; set; }
+        public int Age { get; set; }
+        public Group Group { get; set; }
     }
 }
