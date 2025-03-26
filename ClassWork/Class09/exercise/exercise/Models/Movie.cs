@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercise.Models
+{
+    public class Movie
+    {
+        public Movie()
+        {
+
+        }
+        public Movie(string title, Genre genre, int rating, double ticketPrice)
+        {
+            Title = title;
+            Genre = genre;
+
+            try
+            {
+                if(rating > 0 || rating <= 5)
+                {
+                    Rating = rating;
+                }
+                else
+                {
+                    throw new Exception("Rating must be between 1 and 5");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+
+            TicketPrice = rating * 5;
+        }
+
+        public string Title { get; set; }
+        public Genre Genre { get; set; }
+        public int Rating { get; set; }
+        public double TicketPrice { get; set; }
+
+    }
+}
